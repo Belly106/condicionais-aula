@@ -1,0 +1,76 @@
+/* comparadores: retorna true or false
+if/else:
+let condicao1 = "bom dia";
+if (condicao1){
+    console.log("condição 1");
+}
+*/
+
+let condicao1 = true;
+let condicao2 = false;
+if (condicao1){
+    console.log("bom dia");
+}else{
+    if (condicao2){
+        console.log("boa tarde");
+    }else {
+        console.log("else");
+    }
+} /*jeito simplificado: else if(condicao2){
+    console.log("boa tarde"); *serve para testar cada condição ( cada if) do código. Por exemplo: se esse for tru = false.
+                                                                                        senão esse = testa; false.
+                                                                                        senão esse opção 3 = true.
+    }*/
+
+
+//exercícios:
+function recebeDois(num1, num2){
+    if (num1 === num2){
+        return "os dois são iguais";
+    } else if( num1 >= num2){
+            return "número 1 maior que o 2";
+        } else if (num1 <= num2){
+            return "num1 é menor"
+        }else {
+            return false;
+        }
+}
+console.log(recebeDois());
+console.log(recebeDois(Number(prompt("Digite dois números:")), Number(prompt("Digite dois números:"))));
+
+
+//SWITCH CASE * serve para não repetir tanto o if/else if/ else;
+let paisDeOrigem;
+switch (paisDeOrigem){
+    case 'Brasil': // sempre dois pontos após o case:
+        console.log('brasileira');
+        break;
+
+    case 'EUA':
+        console.log('norte americano');
+        break;
+    case 'Inglaterra':
+        console.log('inglês');
+        break;
+    default: //nosso else.
+    console.log('Nacionalidade não encontrada');
+    break;
+}
+
+let pokemon = prompt("Escolha um pokemon:")
+switch (pokemon){
+    case 'Bulbasauro':
+        console.log("Planta e veneno");
+        break;
+    case 'Charmander':
+        console.log('Fogo');
+        break;
+    case 'Squirtle':
+        console.log('Água');
+        break;
+    default:
+        console.log('tipo do pokemon não encontrado');
+    break;
+}
+
+//para adicionar operadores lógicos é a mesma coisa que com if/else.
